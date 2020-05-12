@@ -6,9 +6,9 @@ const App = () => {
   const [viewport, setViewport] = useState({
     width: '100vw',
     height: '100vh',
-    latitude: 37.7577,
-    longitude: -122.4376,
-    zoom: 8
+    latitude: 37.6577,
+    longitude: -95.665,
+    zoom: 4,
   });
   return (
     <ReactMapGL
