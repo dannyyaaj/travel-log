@@ -17,4 +17,6 @@ code {
 
 .marker {
   stroke: firebrick;
+  
+  transform: translate(-50%, -100%);
 }
