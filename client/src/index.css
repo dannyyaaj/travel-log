@@ -20,7 +20,8 @@ code {
 }
 
 .popup {
-  max-width: 400px;
+  width: 25vw;
+  padding: 1rem;
 }
 
 svg.marker.yellow  path {
@@ -29,4 +30,19 @@ svg.marker.yellow  path {
 
 svg.marker.red path {
   fill: #ff0000;
+}
+
+.entry-form label, .entry-form input, .entry-form textarea, .entry-form button {
+  margin: 0.5rem auto;
+  display: block;
+  width: 100%;
+  font-size: 1.25rem;
+}
+
+.entry-form button {
+  margin-top: 2rem;
+  border-radius: .5rem;
+  padding: 0.25rem;
+  background-color: royalblue;
+  color: #fff;
 }
