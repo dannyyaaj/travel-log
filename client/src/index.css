@@ -24,12 +24,26 @@ code {
   padding: 1rem;
 }
 
+.popup img {
+  padding: 1rem 0;
+  width: 100%;
+  height: 100%;
+}
+
+.popup h3,p {
+  text-transform: capitalize;
+}
+
 svg.marker.yellow  path {
   fill: #f8c102;
 }
 
 svg.marker.red path {
-  fill: #ff0000;
+  fill:  #f05305;
+}
+
+.error {
+  color: #f05305;
 }
 
 .entry-form label, .entry-form input, .entry-form textarea, .entry-form button {
