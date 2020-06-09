@@ -16,7 +16,17 @@ code {
 }
 
 .marker {
-  stroke: firebrick;
-  
   transform: translate(-50%, -100%);
+}
+
+.popup {
+  max-width: 300px;
+}
+
+svg.marker.yellow  path {
+  fill: #f8c102;
+}
+
+svg.marker.red path {
+  fill: #ff0000;
 }
