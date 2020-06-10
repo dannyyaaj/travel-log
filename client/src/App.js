@@ -104,7 +104,6 @@ const App = () => {
               longitude={entry.longitude}
               closeButton={true}
               closeOnClick={false}
-              dynamicPosition={true}
               onClose={() => setShowPopup({})}
               anchor="top"
             >
@@ -112,14 +111,14 @@ const App = () => {
                 <h3>{entry.title}</h3>
                 <p>{entry.comments}</p>
                 <p>{entry.description}</p>
-                <p>
-                  {entry.rating ? `rating: ${entry.rating}` : null}
-                </p>
+                <p>{entry.rating ? `rating: ${entry.rating}` : null}</p>
                 <small>
                   Visited on: {new Date(entry.visitDate).toLocaleDateString()}
                 </small>
 
-                {entry.image ? <img src={entry.image} alt={entry.title} /> : null}
+                {entry.image ? (
+                  <img src={entry.image} alt={entry.title} />
+                ) : null}
               </div>
             </Popup>
           ) : null}
@@ -181,7 +180,6 @@ const App = () => {
             longitude={addEntryLocation.longitude}
             closeButton={true}
             closeOnClick={false}
-            dynamicPosition={true}
             onClose={() => setAddEntryLocation(null)}
             anchor="top"
           >
